@@ -19,6 +19,7 @@ function init()
     gainNode = audioCtx.createGain();
     gainNode.gain.value = 0.5;
 
+    // Connect nodes
 	oscillator.connect(gainNode);
 	gainNode.connect(audioCtx.destination);
 }
